@@ -1,0 +1,54 @@
+//========================================================================
+//! @file       Main.cpp
+//{=======================================================================
+//!
+//! @brief      <Заголовок>\n
+//! @brief      <Подзаголовок>
+//!
+//! @version    [Version 0.01 alpha, build 1]
+//! @author     Copyright (C) <Автор>, <Год> (<Имя> <Почта>)
+//! @date       <Дата>
+//!
+//! @par        Протестировано
+//!           - (TODO: список платформ)
+//!
+//! @todo     - (TODO: список ближайших планов по этому файлу)
+//!
+//! @bug      - (TODO: список найденных ошибок в этом файле)
+//!
+//! @par        История изменений файла
+//!           - Версия 0.01 Alpha
+//!             - Только что созданный файл
+//!
+//}=======================================================================
+
+#include "TXLib.h"
+struct Platforma
+{
+int x;
+int y;
+int w;
+int h;
+HDC image;
+
+void draw()
+     {
+     txTransparentBlt(txDC(),x,y,w,h,image,0,0,TX_WHITE);
+
+     }
+
+};
+
+int main()
+{
+txCreateWindow (1350, 700);
+Platforma platforma1 = {100,250,100,70,txLoadImage("Platforma.bmp")};
+
+platforma1.draw();
+
+
+txTextCursor (false);
+txDeleteDC(platforma1.image);
+return 0;
+}
+
