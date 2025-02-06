@@ -148,3 +148,251 @@ Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
 Directory:	C:\Шлёнкин Матвей\Platformo
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x170C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Player::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:52:
+
+     50: void draw()
+     51:      {
+=>   52:      txTransparentBlt(txDC(),x,y,200,140,image,200*n_cadr,0,RGB(12,184,220));
+     53: 
+     54:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:33:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:33:43
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10937, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x2380 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::_txBuffer_Delete(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:10937:
+
+  10935: $1  if (_TX_ARGUMENT_FAILED (dc)) return false;
+  10936: $   if (                   !*dc)  return false;
+=>10937: $   if (_TX_HDC_FAILED     (*dc)) return false;
+  10938: 
+  10939: $   if (!Win32::GetObjectType (Win32::GetCurrentObject (*dc, OBJ_BITMAP))) return false;
+
+# 1 in bool {anonymous}::TX::txDeleteDC(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13691:
+
+  13689: 
+  13690: $   HDC  dc = *pdc;
+=>13691: $   bool ok = _txBuffer_Delete (pdc);
+  13692: $   if (!ok) return false;
+  13693: 
+
+# 2 in bool {anonymous}::TX::txDeleteDC(HDC) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13713:
+
+  13711: bool txDeleteDC (HDC dc)
+  13712:     {
+=>13713: $1  return txDeleteDC (&dc);
+  13714:     }
+  13715: 
+
+# 3 in int main() at C:\Шлёнкин Матвей\Platformo\main.cpp:96:
+
+     94: txDeleteDC(platforma1.image);
+     95: txDeleteDC(player1.image);
+=>   96: txDeleteDC(player1.image_R);
+     97: txDeleteDC(player1.image_L);
+     98: txDeleteDC(fon);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:43:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:44:57
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10937, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1074 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::_txBuffer_Delete(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:10937:
+
+  10935: $1  if (_TX_ARGUMENT_FAILED (dc)) return false;
+  10936: $   if (                   !*dc)  return false;
+=>10937: $   if (_TX_HDC_FAILED     (*dc)) return false;
+  10938: 
+  10939: $   if (!Win32::GetObjectType (Win32::GetCurrentObject (*dc, OBJ_BITMAP))) return false;
+
+# 1 in bool {anonymous}::TX::txDeleteDC(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13691:
+
+  13689: 
+  13690: $   HDC  dc = *pdc;
+=>13691: $   bool ok = _txBuffer_Delete (pdc);
+  13692: $   if (!ok) return false;
+  13693: 
+
+# 2 in bool {anonymous}::TX::txDeleteDC(HDC) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13713:
+
+  13711: bool txDeleteDC (HDC dc)
+  13712:     {
+=>13713: $1  return txDeleteDC (&dc);
+  13714:     }
+  13715: 
+
+# 3 in int main() at C:\Шлёнкин Матвей\Platformo\main.cpp:96:
+
+     94: txDeleteDC(platforma1.image);
+     95: txDeleteDC(player1.image);
+=>   96: txDeleteDC(player1.image_R);
+     97: txDeleteDC(player1.image_L);
+     98: txDeleteDC(fon);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:53:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:54:02
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10937, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xE3C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::_txBuffer_Delete(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:10937:
+
+  10935: $1  if (_TX_ARGUMENT_FAILED (dc)) return false;
+  10936: $   if (                   !*dc)  return false;
+=>10937: $   if (_TX_HDC_FAILED     (*dc)) return false;
+  10938: 
+  10939: $   if (!Win32::GetObjectType (Win32::GetCurrentObject (*dc, OBJ_BITMAP))) return false;
+
+# 1 in bool {anonymous}::TX::txDeleteDC(HDC__**) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13691:
+
+  13689: 
+  13690: $   HDC  dc = *pdc;
+=>13691: $   bool ok = _txBuffer_Delete (pdc);
+  13692: $   if (!ok) return false;
+  13693: 
+
+# 2 in bool {anonymous}::TX::txDeleteDC(HDC) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13713:
+
+  13711: bool txDeleteDC (HDC dc)
+  13712:     {
+=>13713: $1  return txDeleteDC (&dc);
+  13714:     }
+  13715: 
+
+# 3 in int main() at C:\Шлёнкин Матвей\Platformo\main.cpp:103:
+
+    101: txDeleteDC(platforma1.image);
+    102: txDeleteDC(player1.image_R);
+=>  103: txDeleteDC(player1.image_R);
+    104: txDeleteDC(player1.image_L);
+    105: txDeleteDC(fon);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:00:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:01:15
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
