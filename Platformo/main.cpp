@@ -45,6 +45,8 @@ int y;
 HDC image;
 HDC image_R;
 HDC image_L;
+HDC image_Jump_R;
+HDC image_Jump_L;
 int n_cadr;
 
 void draw()
@@ -67,9 +69,14 @@ void animathion()
 int main()
 {
 txCreateWindow (1350, 700);
+txTextCursor (false);
 HDC fon = txLoadImage("fon.bmp");
 Platforma platforma1 = {-160,550,400,200,txLoadImage("Platforma.bmp")};
-Player player1 = {50,450,txLoadImage("AnimathionGlavPersaR.bmp"),txLoadImage("AnimathionGlavPersaR.bmp"),txLoadImage("AnimathionGlavPersaL.bmp"),0};
+Player player1 = {50,450,   txLoadImage("AnimathionGlavPersaR.bmp"),
+                            txLoadImage("AnimathionGlavPersaR.bmp"),
+                            txLoadImage("AnimathionGlavPersaL.bmp"),
+                            txLoadImage("GlavPersJumpAnimathionR.bmp"),
+                            txLoadImage("GlavPersJumpAnimathionL.bmp"),0};
 
    while(!GetAsyncKeyState(VK_ESCAPE))
    {
@@ -82,6 +89,7 @@ Player player1 = {50,450,txLoadImage("AnimathionGlavPersaR.bmp"),txLoadImage("An
       {
         player1.x += 50;
         player1.image = player1.image_R;
+        player1.image_Jump_R = player1.image_R;
         player1.animathion();
       }
 
@@ -89,18 +97,33 @@ Player player1 = {50,450,txLoadImage("AnimathionGlavPersaR.bmp"),txLoadImage("An
       {
         player1.x -= 50;
         player1.image = player1.image_L;
+        player1.image_Jump_L = player1.image_L;
         player1.animathion();
       }
 
+
+      if (GetAsyncKeyState(VK_SPACE))
+      {
+         player1.y -= 30;
+         player1.image = player1.image_Jump_R;
+         player1.image_L = player1.image_Jump_L;
+         player1.image_R = player1.image_Jump_R;
+         //player1.animathion();
+
+
+
+       }
      txEnd();
      txSleep(50);
    }
 
 
-txTextCursor (false);
 txDeleteDC(platforma1.image);
+txDeleteDC(player1.image);
 txDeleteDC(player1.image_R);
 txDeleteDC(player1.image_L);
+txDeleteDC(player1.image_Jump_R);
+txDeleteDC(player1.image_Jump_L);
 txDeleteDC(fon);
 return 0;
 }
