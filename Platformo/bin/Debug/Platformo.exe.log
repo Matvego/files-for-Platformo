@@ -5942,3 +5942,371 @@ Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
 Directory:	C:\Шлёнкин Матвей\Platformo
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044C600. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1EF0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 20 2025 10:10:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 20 2025 10:26:02
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044C600. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1EF0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 20 2025 10:10:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 20 2025 10:26:02
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044C600. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x20A4 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 08:59:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:01:32
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044C600. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x20A4 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 08:59:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:01:32
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044CC20. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1738 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 09:27:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:27:29
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044CC20. Попытка прочесть данные по адресу 0x007B0004 в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1738 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 09:27:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:27:29
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044CC20. Попытка прочесть данные по адресу 0x007B100C в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1600 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 09:43:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:43:57
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044CC20. Попытка прочесть данные по адресу 0x007B100C в модуле C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1600 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Platforma::draw() at C:\Шлёнкин Матвей\Platformo\main.cpp:19:
+
+     17: void draw()
+     18:      {
+=>   19:      Win32::TransparentBlt(txDC(),x,y,w_screen,h_screen,image,0,0,w,h,TX_WHITE);
+     20: 
+     21:      }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 25 2025 09:43:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 25 2025 09:43:57
+
+Run file:	C:\Шлёнкин Матвей\Platformo\bin\Debug\Platformo.exe
+Directory:	C:\Шлёнкин Матвей\Platformo
+
+--------------------------------------------------

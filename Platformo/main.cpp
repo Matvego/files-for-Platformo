@@ -84,6 +84,51 @@ int change_gamelevel(Platforma platforma[], int gamelevel)
 
     }
 
+    else if (gamelevel == 4)
+    {
+        count_platform = 4 ;
+        platforma[0] = {-180,550,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[0].y,400,200};
+        platforma[1] = {500,350,400,200,txLoadImage("PlatformaDvig.bmp"), 1, 0,0, platforma[1].y,200,100};
+        platforma[2] = {850,250,200,400,txLoadImage("PlatformaVerticSpike.bmp"), 0,1,0, platforma[2].y, 100, 200};
+        platforma[3] = {1160,550,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[3].y,400,200};
+    }
+
+    else if (gamelevel == 5)
+    {
+        count_platform = 6 ;
+        platforma[0] = {-180,550,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[0].y,400,200};
+        platforma[1] = {400,350,400,200,txLoadImage("PlatformaDvig.bmp"), 1, 0,0, platforma[1].y,200,100};
+        platforma[2] = {650,200,200,400,txLoadImage("PlatformaVerticSpike.bmp"), 0,1,0, platforma[2].y, 100, 200};
+        platforma[3] = {250,150,200,400,txLoadImage("PlatformaVerticSpike1.bmp"), 0,1,0, platforma[3].y,100,200};
+        platforma[4] = {850,150,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[4].y,200,100};
+        platforma[5] = {1160,150,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[5].y,400,200};
+
+    }
+
+    else if (gamelevel == 6)
+    {
+        count_platform = 6 ;
+        platforma[0] = {-180,150,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[0].y,400,200};
+        platforma[1] = {250,550,400,200,txLoadImage("PlatformaDvig.bmp"), 1, 0,0, platforma[1].y,200,100};
+        platforma[2] = {650,300,200,400,txLoadImage("PlatformaVerticSpike.bmp"), 0,1,0, platforma[2].y, 200, 400};
+        platforma[3] = {1100,300,400,200,txLoadImage("PlatformaSpike.bmp"), 0,1,0, platforma[3].y,400,200};
+        platforma[4] = {950,550,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[4].y,200,100};
+        platforma[5] = {1200,600,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[5].y,400,200};
+
+    }
+
+    else if (gamelevel == 7)
+    {
+        count_platform = 5 ;
+        platforma[0] = {-180,400,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[0].y,400,200};
+        platforma[1] = {250,550,400,200,txLoadImage("PlatformaDvig.bmp"), 1, 0,0, platforma[1].y,200,100};
+        platforma[2] = {650,300,200,400,txLoadImage("PlatformaVerticSpike.bmp"), 0,1,0, platforma[2].y, 200, 400};
+        platforma[3] = {1100,300,400,200,txLoadImage("PlatformaSpike.bmp"), 0,1,0, platforma[3].y,400,200};
+        platforma[4] = {950,550,400,200,txLoadImage("Platforma.bmp"), 0,0,0, platforma[4].y,200,100};
+
+
+    }
+
 
     return count_platform;
 }
@@ -216,8 +261,8 @@ char str[50];
 
        for(int i=0; i<count_platform; i++)
        {
-           if (platforma[i].revers && player1.x+100 > platforma[i].x && player1.x+player1.w-100 < platforma[i].x+platforma[i].w_screen && player1.y<platforma[i].y
-           && player1.y+player1.h-40>platforma[i].y)
+           if (platforma[i].revers && player1.x+100 > platforma[i].x && player1.x+player1.w-100 < platforma[i].x+platforma[i].w_screen && player1.y-player1.h+40<platforma[i].y
+           && player1.y>platforma[i].y)
            {
              player1.x = 0;
              player1.y = 0;
